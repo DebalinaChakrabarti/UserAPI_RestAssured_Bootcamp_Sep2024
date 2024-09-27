@@ -1,0 +1,1 @@
+{"uuid":"94e3b4f0-015b-4a1b-9c7a-2ad428b09151","name":"Scenario Outline: Check if Admin is able to create new User with Mandatory fields only","children":["bd9d5bde-c2f1-462f-92ac-eaef92b38170"],"befores":[],"afters":[],"start":1727415560493,"stop":1727415561426}

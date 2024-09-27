@@ -1,0 +1,1 @@
+{"uuid":"22992fb5-eea4-4a10-a441-21305f9f1101","name":"Scenario Outline: Check if Admin is able to create new User with valid or invalid inputs","children":["24561e4b-a5d5-4f9b-a6b1-34f0338631ff"],"befores":[],"afters":[],"start":1727413118090,"stop":1727413118826}

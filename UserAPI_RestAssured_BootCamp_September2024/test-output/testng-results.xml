@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="65" passed="65" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-27T02:04:17 CDT" name="Default suite" finished-at="2024-09-27T02:05:17 CDT" duration-ms="59974">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-09-27T02:04:17 CDT" name="Default test" finished-at="2024-09-27T02:05:17 CDT" duration-ms="59974">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:17 CDT" name="setUpClass" finished-at="2024-09-27T02:04:18 CDT" duration-ms="419" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@47c163bb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:18 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:19 CDT" duration-ms="1335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check Admin able to retrieve all Users details with valid or invalid datas"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:19 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:21 CDT" duration-ms="1488" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check Admin able to retrieve all Users details with valid or invalid datas"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:21 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:21 CDT" duration-ms="729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check Admin able to retrieve all Users details with valid or invalid datas"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:21 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:23 CDT" duration-ms="1570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:23 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:24 CDT" duration-ms="1337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:24 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:25 CDT" duration-ms="760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:25 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:26 CDT" duration-ms="759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:26 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:27 CDT" duration-ms="1035" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:27 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:28 CDT" duration-ms="914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:28 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:29 CDT" duration-ms="732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:29 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:29 CDT" duration-ms="882" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:29 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:30 CDT" duration-ms="925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:30 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:31 CDT" duration-ms="853" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:31 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:32 CDT" duration-ms="918" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:32 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:33 CDT" duration-ms="816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:33 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:34 CDT" duration-ms="959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:34 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:35 CDT" duration-ms="789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:35 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:35 CDT" duration-ms="801" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:35 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:36 CDT" duration-ms="919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:36 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:37 CDT" duration-ms="930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:37 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:38 CDT" duration-ms="915" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:38 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:39 CDT" duration-ms="1029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:39 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:40 CDT" duration-ms="1022" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:40 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:41 CDT" duration-ms="1024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:41 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:42 CDT" duration-ms="1011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:42 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:43 CDT" duration-ms="935" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:43 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:44 CDT" duration-ms="902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:44 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:45 CDT" duration-ms="934" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:45 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:46 CDT" duration-ms="720" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:46 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:47 CDT" duration-ms="914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:47 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:48 CDT" duration-ms="820" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:48 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:48 CDT" duration-ms="853" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:48 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:49 CDT" duration-ms="727" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:49 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:50 CDT" duration-ms="977" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:50 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:51 CDT" duration-ms="1021" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:51 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:52 CDT" duration-ms="920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:52 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:53 CDT" duration-ms="922" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:53 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:54 CDT" duration-ms="818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:54 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:55 CDT" duration-ms="971" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:55 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:56 CDT" duration-ms="767" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:56 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:56 CDT" duration-ms="878" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:56 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:57 CDT" duration-ms="966" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:57 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:58 CDT" duration-ms="772" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with valid or invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:58 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:59 CDT" duration-ms="475" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User without Authorization"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:59 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:04:59 CDT" duration-ms="507" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to retrieve User Details by UserID with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:04:59 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:00 CDT" duration-ms="672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to retrieve User Details by UserID with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:00 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:01 CDT" duration-ms="937" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to retrieve User Details by UserID with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:01 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:02 CDT" duration-ms="854" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to retrieve User Details by UserID with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:02 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:02 CDT" duration-ms="357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to update user with valid or invalid datas"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:02 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:03 CDT" duration-ms="889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to update user with valid or invalid datas"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:03 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:04 CDT" duration-ms="967" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to update user with valid or invalid datas"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:04 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:05 CDT" duration-ms="866" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to update user with valid or invalid datas"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:05 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:05 CDT" duration-ms="316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:05 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:06 CDT" duration-ms="670" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:06 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:07 CDT" duration-ms="906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:07 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:08 CDT" duration-ms="920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:08 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:08 CDT" duration-ms="319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to Delete User by UserID with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:08 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:09 CDT" duration-ms="808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to Delete User by UserID with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:09 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:09 CDT" duration-ms="713" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to Delete User by UserID with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:09 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:10 CDT" duration-ms="700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to Delete User by UserID with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:10 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:11 CDT" duration-ms="798" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if Admin is able to create new User with Mandatory fields only"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:11 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:11 CDT" duration-ms="420" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to Delete User by UserFirstName with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:11 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:12 CDT" duration-ms="836" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to Delete User by UserFirstName with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:12 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:13 CDT" duration-ms="730" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to Delete User by UserFirstName with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:13 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-27T02:05:14 CDT" duration-ms="1274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if admin is able to Delete User by UserFirstName with valid and invalid inputs"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing CRUD operation in User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@67d48005]" started-at="2024-09-27T02:05:14 CDT" name="tearDownClass" finished-at="2024-09-27T02:05:17 CDT" duration-ms="3251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,3594 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>API_Group</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Extent Spark Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 27, 2024 01:30:10</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 27, 2024 01:30:10</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 27, 2024 01:31:05</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>65</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>195</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Testing CRUD operation in User":55.068
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@PUT_Request_to_Update_User</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DeleteRequest(Delete_User_By_UserFirstName)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@POST_Request_to_Create_User</td>
+<td>40</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@POST_Request_to_Create_User_without_authorization</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DeleteRequest(Delete_User_By_UserID)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetRequest(Get_User_By_UserFirstName)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@UserModule</td>
+<td>65</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@POST_Request_to_Create_User_With_Mandatory_Fields</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Get_Request(get_all_Users)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetRequest(Get_User_By_UserID)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Debalina</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>User API</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>Google Chrome</td>
+</tr>
+<tr>
+<td>os</td>
+<td>MAC</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 65,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 195,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@PUT_Request_to_Update_User</a><a class="dropdown-item" href="#">@DeleteRequest(Delete_User_By_UserFirstName)</a><a class="dropdown-item" href="#">@POST_Request_to_Create_User</a><a class="dropdown-item" href="#">@POST_Request_to_Create_User_without_authorization</a><a class="dropdown-item" href="#">@DeleteRequest(Delete_User_By_UserID)</a><a class="dropdown-item" href="#">@GetRequest(Get_User_By_UserFirstName)</a><a class="dropdown-item" href="#">@UserModule</a><a class="dropdown-item" href="#">@POST_Request_to_Create_User_With_Mandatory_Fields</a><a class="dropdown-item" href="#">@Get_Request(get_all_Users)</a><a class="dropdown-item" href="#">@GetRequest(Get_User_By_UserID)</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Testing CRUD operation in User</p>
+            <p class="text-sm">
+              <span>1:30:10 AM</span> / <span>00:00:55:068</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Testing CRUD operation in User</h5>
+<span class='badge badge-success'>09.27.2024 1:30:10 AM</span>
+<span class='badge badge-danger'>09.27.2024 1:31:05 AM</span>
+<span class='badge badge-default'>00:00:55:068</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Check Admin able to retrieve all Users details with valid or invalid datas</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Check Admin able to retrieve all Users details with valid or invalid datas</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates GET Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and "noAuth"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response status code "401" with "Unauthorized" message with "valid" and "noAuth"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Check Admin able to retrieve all Users details with valid or invalid datas</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates GET Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and "auth"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response status code "200" with "OK" message with "valid" and "auth"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Check Admin able to retrieve all Users details with valid or invalid datas</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates GET Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "invalid" and "auth"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response status code "404" with "Not Found" message with "invalid" and "auth"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "invalid" and request body for "UserModule" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 3</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 3</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 4</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 5</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 5</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 6</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 6</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="40"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 7</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 7</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="44"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 8</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 8</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="48"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 9</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 9</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="52"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 10</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 10</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 11</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 11</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="60"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 12</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 12</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="64"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 13</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 13</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="68"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 14</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 14</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 15</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 15</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="76"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 16</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 16</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="80"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 17</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 17</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="84"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 18</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 18</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="88"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 19</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 19</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="92"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 20</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 20</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="96"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 21</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 21</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="100"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 22</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 22</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="104"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 23</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 23</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="108"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 24</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 24</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="112"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 25</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 25</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="116"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 26</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 26</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="120"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 27</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 27</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="124"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 28</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 28</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="128"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 29</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 29</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="132"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 30</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 30</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="136"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 31</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 31</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="140"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 32</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 32</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="144"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 33</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 33</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="148"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 34</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 34</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="152"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 35</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 35</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="156"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 36</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 36</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="160"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 37</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 37</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="164"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 38</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 38</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="168"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 39</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 39</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="172"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with valid or invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 40</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 40</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="176"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User without Authorization</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="177"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User without Authorization</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User without Authorization</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request without Authorization with "valid" request body for "UserModule" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="181"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="182"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates GET Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "noauth" endpoint "valid" to retrieve User Details by UserID "valid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 401 and "Unauthorized" with response body for User Module</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="186"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates GET Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "auth" endpoint "valid" to retrieve User Details by UserID "valid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 200 and "OK" with response body for User Module</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="190"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates GET Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "auth" endpoint "invalid" to retrieve User Details by UserID "valid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 404 and "Not Found" with response body for User Module</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="194"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates GET Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "auth" endpoint "valid" to retrieve User Details by UserID "invalid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 404 and "Not Found" with response body for User Module</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="198"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to update user with valid or invalid datas</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="199"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to update user with valid or invalid datas</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets PUT request to update user details with request body for "UserModule" and 48</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP PUT request with "noauth" and "valid" to update user by "valid" with request body for "UserModule" and 48</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code 401 and "HTTP/1.1 401"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="203"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to update user with valid or invalid datas</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets PUT request to update user details with request body for "UserModule" and 48</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP PUT request with "auth" and "invalid" to update user by "valid" with request body for "UserModule" and 48</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code 404 and "HTTP/1.1 404"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="207"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to update user with valid or invalid datas</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets PUT request to update user details with request body for "UserModule" and 48</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP PUT request with "auth" and "valid" to update user by "invalid" with request body for "UserModule" and 48</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code 404 and "HTTP/1.1 404"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="211"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to update user with valid or invalid datas</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets PUT request to update user details with request body for "UserModule" and 48</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP PUT request with "auth" and "valid" to update user by "valid" with request body for "UserModule" and 48</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code 200 and "HTTP/1.1 200"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="215"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="216"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates GET Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "noauth" endpoint "valid" to retrieve User Details by User First Name "valid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 401 and "Unauthorized" with response body for User Module.</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="220"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates GET Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "auth" endpoint "valid" to retrieve User Details by User First Name "valid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 200 and "OK" with response body for User Module.</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="224"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates GET Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "auth" endpoint "invalid" to retrieve User Details by User First Name "valid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 404 and "Not Found" with response body for User Module.</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="228"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates GET Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "auth" endpoint "valid" to retrieve User Details by User First Name "invalid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 404 and "Not Found" with response body for User Module.</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="232"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to Delete User by UserID with valid and invalid inputs</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="233"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to Delete User by UserID with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates DELETE Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "noauth" endpoint "valid" to delete User by UserID "valid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 401 and "Unauthorized" and "HTTP/1.1 401" with response body for User Module</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="237"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to Delete User by UserID with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates DELETE Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "auth" endpoint "valid" to delete User by UserID "valid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 200 and "OK" and "HTTP/1.1 200" with response body for User Module</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="241"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to Delete User by UserID with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates DELETE Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "auth" endpoint "invalid" to delete User by UserID "valid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 404 and "Not Found" and "HTTP/1.1 404" with response body for User Module</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="245"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to Delete User by UserID with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates DELETE Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "auth" endpoint "valid" to delete User by UserID "invalid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 404 and "Not Found" and "HTTP/1.1 404" with response body for User Module</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="249"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with Mandatory fields only</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="250"><span class="badge log pass-bg mr-2">Pass</span>Check if Admin is able to create new User with Mandatory fields only</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin sets POST request to create User with request body for "UserModule" and 44</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTP request with "valid" and request body for "UserModule" and 44 to create user with Mandatory fields only</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin recieves response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="254"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="255"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates DELETE Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "noauth" endpoint "valid" to delete User by User First Name "valid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 401 and "Unauthorized" and "HTTP/1.1 401" with response body for User Module.</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="259"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates DELETE Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "auth" endpoint "valid" to delete User by User First Name "valid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 200 and "OK" and "HTTP/1.1 200" with response body for User Module.</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="263"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates DELETE Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "auth" endpoint "invalid" to delete User by User First Name "valid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 404 and "Not Found" and "HTTP/1.1 404" with response body for User Module.</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="267"><span class="badge log pass-bg mr-2">Pass</span>Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin creates DELETE Request for User Module</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin sends HTTPS Request with authorization "auth" endpoint "valid" to delete User by User First Name "invalid"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin receives Status 404 and "Not Found" and "HTTP/1.1 404" with response body for User Module.</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">10</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@PUT_Request_to_Update_User</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PUT_Request_to_Update_User</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='199'>Check if Admin is able to update user with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to update user with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='203'>Check if Admin is able to update user with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to update user with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:54 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='207'>Check if Admin is able to update user with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to update user with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='211'>Check if Admin is able to update user with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to update user with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@DeleteRequest(Delete_User_By_UserFirstName)</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DeleteRequest(Delete_User_By_UserFirstName)</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='255'>Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='259'>Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:04 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='263'>Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:04 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='267'>Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>40</span>
+</span>
+<p class="name">@POST_Request_to_Create_User</p>
+<p class="duration text-sm">40 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@POST_Request_to_Create_User</h4>
+<span status="pass" class='badge log pass-bg'>40 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:17 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:21 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:22 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='44'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:22 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='48'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='56'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:25 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='60'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:26 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='64'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:27 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='68'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:28 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:28 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='76'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:29 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='80'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:30 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='84'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='88'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='92'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:33 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='96'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:34 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:34 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='104'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:35 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='108'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='112'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='116'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='120'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:38 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='124'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:39 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='128'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:40 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='132'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:41 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='136'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='140'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='144'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:43 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='148'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:44 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='152'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='156'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='160'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:46 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='164'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:47 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='168'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='172'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@POST_Request_to_Create_User_without_authorization</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@POST_Request_to_Create_User_without_authorization</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='177'>Check if Admin is able to create new User without Authorization</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User without Authorization</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@DeleteRequest(Delete_User_By_UserID)</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DeleteRequest(Delete_User_By_UserID)</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='233'>Check if admin is able to Delete User by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:59 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='237'>Check if admin is able to Delete User by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:00 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='241'>Check if admin is able to Delete User by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:00 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='245'>Check if admin is able to Delete User by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@GetRequest(Get_User_By_UserFirstName)</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetRequest(Get_User_By_UserFirstName)</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='216'>Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='220'>Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='224'>Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='228'>Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>65</span>
+</span>
+<p class="name">@UserModule</p>
+<p class="duration text-sm">65 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@UserModule</h4>
+<span status="pass" class='badge log pass-bg'>65 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Check Admin able to retrieve all Users details with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check Admin able to retrieve all Users details with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Check Admin able to retrieve all Users details with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check Admin able to retrieve all Users details with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Check Admin able to retrieve all Users details with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check Admin able to retrieve all Users details with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:17 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:21 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:22 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='44'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:22 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='48'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='56'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:25 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='60'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:26 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='64'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:27 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='68'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:28 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:28 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='76'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:29 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='80'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:30 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='84'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='88'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='92'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:33 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='96'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:34 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:34 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='104'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:35 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='108'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='112'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='116'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='120'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:38 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='124'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:39 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='128'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:40 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='132'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:41 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='136'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='140'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='144'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:43 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='148'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:44 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='152'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='156'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='160'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:46 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='164'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:47 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='168'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='172'>Check if Admin is able to create new User with valid or invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with valid or invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='177'>Check if Admin is able to create new User without Authorization</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User without Authorization</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='182'>Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='186'>Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='190'>Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:51 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='194'>Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='199'>Check if Admin is able to update user with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to update user with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='203'>Check if Admin is able to update user with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to update user with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:54 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='207'>Check if Admin is able to update user with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to update user with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='211'>Check if Admin is able to update user with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to update user with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='216'>Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='220'>Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='224'>Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='228'>Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='233'>Check if admin is able to Delete User by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:59 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='237'>Check if admin is able to Delete User by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:00 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='241'>Check if admin is able to Delete User by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:00 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='245'>Check if admin is able to Delete User by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:01 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='250'>Check if Admin is able to create new User with Mandatory fields only</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with Mandatory fields only</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='255'>Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='259'>Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:04 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='263'>Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:04 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='267'>Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to Delete User by UserFirstName with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@POST_Request_to_Create_User_With_Mandatory_Fields</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@POST_Request_to_Create_User_With_Mandatory_Fields</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:01 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='250'>Check if Admin is able to create new User with Mandatory fields only</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if Admin is able to create new User with Mandatory fields only</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@Get_Request(get_all_Users)</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Get_Request(get_all_Users)</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Check Admin able to retrieve all Users details with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check Admin able to retrieve all Users details with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Check Admin able to retrieve all Users details with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check Admin able to retrieve all Users details with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Check Admin able to retrieve all Users details with valid or invalid datas</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check Admin able to retrieve all Users details with valid or invalid datas</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@GetRequest(Get_User_By_UserID)</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetRequest(Get_User_By_UserID)</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='182'>Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='186'>Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='190'>Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:30:51 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='194'>Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Testing CRUD operation in User.Check if admin is able to retrieve User Details by UserID with valid and invalid inputs</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

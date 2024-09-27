@@ -1,0 +1,1 @@
+{"uuid":"8e907752-7640-4715-972a-88db863f092c","name":"Scenario Outline: Check if Admin is able to create new User without Authorization","children":["1506ecc6-b00c-48b6-8275-0cd3bfb0e795"],"befores":[],"afters":[],"start":1727418463895,"stop":1727418463896}

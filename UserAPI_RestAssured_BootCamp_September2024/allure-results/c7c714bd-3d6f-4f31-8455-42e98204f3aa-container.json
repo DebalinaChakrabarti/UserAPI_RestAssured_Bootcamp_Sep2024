@@ -1,0 +1,1 @@
+{"uuid":"c7c714bd-3d6f-4f31-8455-42e98204f3aa","name":"Scenario Outline: Check if admin is able to retrieve User Details by UserID with valid and invalid inputs","children":["55fe97a8-5581-4044-aeda-3d7dcfd5326a"],"befores":[],"afters":[],"start":1727418650992,"stop":1727418651843}

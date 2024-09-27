@@ -1,0 +1,1 @@
+{"uuid":"bd7aabf5-2c00-4ac0-bde7-3a749629f626","name":"Scenario Outline: Check if admin is able to Delete User by UserID with valid and invalid inputs","children":["c25e8103-e5ae-4b20-97e9-8df8f686b0f3"],"befores":[],"afters":[],"start":1727378392547,"stop":1727378393204}
