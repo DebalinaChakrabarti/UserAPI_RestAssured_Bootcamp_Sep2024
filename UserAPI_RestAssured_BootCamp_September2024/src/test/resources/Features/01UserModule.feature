@@ -27,7 +27,6 @@ Background: User sets the Basic authorization with Username and Password and ent
       | sheet				| row |	endpoint	|
       | UserModule  |   1 |	invalid		|
       | UserModule  |   1 |	valid			|
-      #| UserModule  |   2 |	valid			|
       | UserModule  |   3 |	valid			|
       | UserModule  |   4 |	valid			|
       | UserModule  |   5 |	valid			|

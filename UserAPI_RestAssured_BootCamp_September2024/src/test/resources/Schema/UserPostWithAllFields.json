@@ -4,6 +4,9 @@
     "userAddress": {
       "type": "object",
       "properties": {
+        "addressId": {
+          "type": "integer"
+        },
         "plotNumber": {
           "type": "string"
         },
@@ -21,12 +24,16 @@
         }
       },
       "required": [
+        "addressId",
         "plotNumber",
         "street",
         "state",
         "country",
         "zipCode"
       ]
+    },
+    "user_id": {
+      "type": "integer"
     },
     "user_first_name": {
       "type": "string"
@@ -39,13 +46,22 @@
     },
     "user_email_id": {
       "type": "string"
+    },
+    "creation_time": {
+      "type": "string"
+    },
+    "last_mod_time": {
+      "type": "string"
     }
   },
   "required": [
     "userAddress",
+    "user_id",
     "user_first_name",
     "user_last_name",
     "user_contact_number",
-    "user_email_id"
+    "user_email_id",
+    "creation_time",
+    "last_mod_time"
   ]
 }

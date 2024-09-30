@@ -2,6 +2,7 @@ package requests;
 
 import java.io.IOException;
 
+import org.hamcrest.Matcher;
 import org.testng.Assert;
 
 
@@ -37,6 +38,10 @@ public class UserCRUDRequests extends RestUtils {
 				.post(endpoint)
 				.then()
 				.log().all()
+//				.assertThat()
+//				.statusCode(201)
+//				.body("user_id", Matcher.notNullValue())
+//				.and()
 //				.body(JsonSchemaValidator.matchesJsonSchema(userPostWithAllFieldsJson)) //Schema Validation
 				.extract().response();
 
@@ -58,6 +63,9 @@ public class UserCRUDRequests extends RestUtils {
 		//		objUserPayload.setUser_id(userId1);
 				System.out.println("userId1 " +userId1);
 				System.out.println("userFirstName1 " +userFirstName1);
+				
+				response.then().body(JsonSchemaValidator.matchesJsonSchema(userPostWithAllFieldsJson)); //Schema Validation
+				
 //			}else {
 //				userIdMandatoryFields = response.getBody().jsonPath().getInt("user_id");
 //				userFirstNameMandatoryFields = response.getBody().jsonPath().getString("user_first_name");
@@ -597,9 +605,14 @@ public class UserCRUDRequests extends RestUtils {
 //			if(userId1 == 0 ) {
 			 	userId1 = response.getBody().jsonPath().getInt("user_id");
 			 	userFirstName1 = response.getBody().jsonPath().getString("user_first_name");
-		//		objUserPayload.setUser_id(userId1);
+			 	
+				response.then().body(JsonSchemaValidator.matchesJsonSchema(userPostWithAllFieldsJson)); //Schema Validation
+			 	
+			 	//		objUserPayload.setUser_id(userId1);
 				System.out.println("userId1 " +userId1);
 				System.out.println("userFirstName1 " +userFirstName1);
+
+				
 //			}else {
 //				userIdMandatoryFields = response.getBody().jsonPath().getInt("user_id");
 //				userFirstNameMandatoryFields = response.getBody().jsonPath().getString("user_first_name");
