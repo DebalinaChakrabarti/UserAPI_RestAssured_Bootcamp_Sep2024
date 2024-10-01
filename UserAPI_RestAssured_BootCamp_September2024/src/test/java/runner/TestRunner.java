@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 				},
 		dryRun=false,
 		//tags="@tag",
-		glue= {"stepDefinitions","RestUtils"},
+		glue= {"stepDefinitions"},
 				plugin= {"pretty","html:target/CucumberReports/CucumberReport.html",
 						"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 						"pretty","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"

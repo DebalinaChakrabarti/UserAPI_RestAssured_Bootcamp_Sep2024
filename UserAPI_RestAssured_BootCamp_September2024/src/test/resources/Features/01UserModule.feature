@@ -12,7 +12,7 @@ Background: User sets the Basic authorization with Username and Password and ent
 
     Examples: 
       | endpoint | statuscode | statustext		| authorization	|  
-      | valid    |        401 | Unauthorized	|	noAuth				|
+      | valid    |        401 | Unauthorized	|	noauth				|
       | valid    |        200 | OK			  		|	auth					|
 			| invalid  |        404 | Not Found 		|	auth					|
 
